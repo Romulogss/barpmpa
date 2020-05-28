@@ -30,7 +30,7 @@ export class DadosGeraisComponent implements OnInit {
 
   public onSubmit() {
     this.service.setDadosGerais(this.form.value)
-    console.log(this.service.getDadosGerais())
+    window.location.href += 'aquisicao'
   }
 
 }
