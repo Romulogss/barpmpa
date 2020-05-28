@@ -1,0 +1,145 @@
+<form
+[formGroup]="form"
+(ngSubmit)="onSubmit()">
+	<!--FORM DADOS PARA O COMÉRCIO-->
+	<div class="form-group">
+		<label>Quantas armas foram adquiridas no comércio</label>
+		<input
+    type="number"
+    class="form-control"
+    formControlName="quantidadeComercio">
+    </div>
+		<div class="form-group">
+			<label>
+        Informe a quantidade de armas, de cada espécie e especificas quantas são de cada
+        calibre, adquiridas no comércio
+      </label>
+			<textarea
+      cols="50"
+      rows="4"
+      class="form-control"
+      placeholder="EX: 17(DEZESSETE) PISTOLAS, SENDO  09(NOVE)Cal. .40S&W E 12(DOZE) Cal. 9mm 01(UMA)Cal. .380, E 02(DOIS) REVÓLVERES Cal..38 E RIFLES,CARABINAS 01(UMA)Cal,.22 E 01(UMA)ESPINGARDA Cal. 20"
+      formControlName="textoComercio"></textarea>
+		</div>
+		<!--FORM DADOS PARA O COMÉRCIO FIM-->
+
+		<!--FORM DADOS PARA A INDÚSTRIA-->
+		<div class="form-group">
+			<label>Quantas armas foram adquiridas na indústria</label>
+			<input
+      type="number"
+      class="form-control"
+      formControlName="quantidadeIndustria">
+    </div>
+			<div class="form-group">
+				<label>
+          Informe a quantidade de armas, de cada espécie e especificas quantas são de cada
+          calibre, aquiridas na indústria
+        </label>
+				<textarea
+        cols="50"
+        rows="4"
+        class="form-control"
+        placeholder="EX: 17(DEZESSETE) PISTOLAS, SENDO  09(NOVE)Cal. .40S&W E 12(DOZE) Cal. 9mm 01(UMA)Cal. .380, E 02(DOIS) REVÓLVERES Cal..38 E RIFLES,CARABINAS 01(UMA)Cal,.22 E 01(UMA)ESPINGARDA Cal. 20"
+        formControlName="textoIndustria"></textarea>
+			</div>
+			<!--FORM DADOS PARA A INDÚSTRIA FIM-->
+
+			<!--FORM DADOS PARA TRANSFERÊNCIAS-->
+			<div class="form-group">
+				<label>Quantas armas foram adquiridas por transferência</label>
+				<input
+        type="number"
+        class="form-control"
+        formControlName="quantidadeTransferencia">
+    </div>
+				<div class="form-group">
+					<label>
+            Informe a quantidade de armas, de cada espécie e especificas quantas são de cada
+            calibre, adquiridas por transferência
+          </label>
+					<textarea
+          cols="50"
+          rows="4"
+          class="form-control"
+          placeholder="EX: 17(DEZESSETE) PISTOLAS, SENDO  09(NOVE)Cal. .40S&W E 12(DOZE) Cal. 9mm 01(UMA)Cal. .380, E 02(DOIS) REVÓLVERES Cal..38 E RIFLES,CARABINAS 01(UMA)Cal,.22 E 01(UMA)ESPINGARDA Cal. 20"
+          formControlName="textoTransferencia"></textarea>
+				</div>
+				<!--FORM DADOS PARA TRANSFERÊNCIAS FIM-->
+
+				<!--FORM DADOS PARA PORTES-->
+				<div class="form-group">
+					<label>Quantos PAF's serão emitidos:</label>
+					<input
+          type="number"
+          class="form-control"
+          formControlName="quantidadePorte">
+        </div>
+        <div class="form-group">
+          <label>
+            Informe a quantidade de armas, de cada espécie e especificas quantas são de cada
+            calibre, para emissão de PAF
+          </label>
+          <textarea
+          cols="50"
+          rows="4"
+          class="form-control"
+          placeholder="EX: 17(DEZESSETE) PISTOLAS, SENDO  09(NOVE)Cal. .40S&W E 12(DOZE) Cal. 9mm 01(UMA)Cal. .380, E 02(DOIS) REVÓLVERES Cal..38 E RIFLES,CARABINAS 01(UMA)Cal,.22 E 01(UMA)ESPINGARDA Cal. 20"
+          formControlName="textoPorte"></textarea>
+        </div>
+					<!--FORM DADOS PARA PORTES FIM-->
+
+					<!--FORM DADOS PARA 2ª VIA DE CRAF-->
+        <div class="form-group">
+          <label>Quantos CRAF's serão emitidos:</label>
+          <input
+          type="number"
+          class="form-control"
+          formControlName="quantidadeSegundaViaCRAF">
+        </div>
+        <div class="form-group">
+          <label>
+            Informe a quantidade de armas, de cada espécie e especificas quantas são de cada
+            calibre, para emissão de CRAF's
+          </label>
+          <textarea
+          cols="50"
+          rows="4"
+          class="form-control"
+          placeholder="EX: 17(DEZESSETE) PISTOLAS, SENDO  09(NOVE)Cal. .40S&W E 12(DOZE) Cal. 9mm 01(UMA)Cal. .380, E 02(DOIS) REVÓLVERES Cal..38 E RIFLES,CARABINAS 01(UMA)Cal,.22 E 01(UMA)ESPINGARDA Cal. 20"
+          formControlName="textoSegundaViaCRAF"></textarea>
+        </div>
+						<!--FORM DADOS PARA 2ª VIA DE CRAF FIM-->
+
+						<!--FORM DADOS PARA MUDANÇA DE STATUS-->
+        <div class="form-group">
+          <label>Quantos mudanças de status serão feitas:</label>
+          <input
+          type="number"
+          class="form-control"
+          formControlName="quantidadeStatus">
+        </div>
+        <div class="form-group">
+          <label>
+            Informe a quantidade de armas, de cada espécie e especificas quantas são de cada
+            calibre, para mudança de status</label>
+          <textarea
+          cols="50"
+          rows="4"
+          class="form-control"
+          placeholder="EX: 17(DEZESSETE) PISTOLAS, SENDO  09(NOVE)Cal. .40S&W E 12(DOZE) Cal. 9mm 01(UMA)Cal. .380, E 02(DOIS) REVÓLVERES Cal..38 E RIFLES,CARABINAS 01(UMA)Cal,.22 E 01(UMA)ESPINGARDA Cal. 20"
+          formControlName="textoStatus"></textarea>
+        </div>
+        <!--FORM DADOS PARA MUDANÇA DE STATUS FIM-->
+
+        <!--FORM DADOS PARA MANUTENÇÃO NO SIGMA-->
+        <div class="form-group">
+          <label>Quantos manutenções no SIGMA serão feitas:</label>
+          <input
+          type="number"
+          class="form-control"
+          formControlName="quantidadeManutencao">
+        </div>
+          <!--FORM DADOS PARA MUDANÇA DE STATUS FIM-->
+          <button class="btn btn-primary" style="position: relative;"> Dados Ok</button>
+</form>
